@@ -22,23 +22,23 @@ public class Control {
 	
 	public void canalUp() {
 		if(tv.estado == true && tv.canal<120) {
-			tv.setCanal(tv.canal++);
+			tv.setCanal(tv.canal+1);
 		}
 		
 	}
     public void canalDown() {
         if(tv.estado == true && tv.canal>1) {
-        	tv.setCanal(tv.canal--);
+        	tv.setCanal(tv.canal-1);
 		}
 	}
     public void volumenUp() {
            if(tv.estado == true && tv.volumen<7) {
-        	   tv.setVolumen(tv.volumen++);
+        	   tv.setVolumen(tv.volumen+1);
 		}
 	}
     public void volumenDown() {
     	if(tv.estado == true && tv.volumen>0) {
-    		tv.setVolumen(tv.volumen--);
+    		tv.setVolumen(tv.volumen-1);
  		}
 	}
     
